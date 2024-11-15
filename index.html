@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serbal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <style>
+        body {
+            background: #0F1014;
+            scroll-behavior: smooth;
+        }
+
+        .splide__slide img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .splide__slide {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+
+.tag {
+  padding: 0.25em 0.75em;
+  border-radius: 1em;
+  color: #fafafa;
+}
+
+.tag-blue {
+  background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+}
+
+.tag-brown {
+  background: linear-gradient(to bottom, #ffd194, #d1913c);
+}
+
+.tag-red {
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+}
+
+.first {
+  padding: 1pc;
+}
+
+.second {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1pc;
+}
+
+.second img {
+  width: 600%;
+  height: auto;
+  max-width: 600px; 
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.third {
+  background-color: white;
+  color: black;
+  padding: 1pc;
+}
+
+@media (min-width: 768px) {
+  .second img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .third {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .second { 
+    flex-direction: column;
+  } 
+
+  .second img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
+    max-width: 100%; 
+    max-height: 300px;
+  } 
+
+  .third {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+}
+
+  .video-card-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hover-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.video-card:hover .hover-button {
+    opacity: 1;
+    pointer-events: all;
+}
+
+</style>
+</head>
+<body>
+
+<div class="card1" style="padding: 1pc; width: 100%;"> 
+      <div class="card__body" style="display: flex; gap: 10px;">
+      <span class="tag tag-brown" style="font-size: 18px;">Serbal</span>
+      <span class="tag tag-blue" style="font-size: 18px;">About</span>
+  </div>
+</div>
+
+    <!-- <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                      <img src="amjd-rdwan--BE2bz3HAOQ-unsplash.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="cristina-anne-costello-tejBLfQwj4k-unsplash.jpg" alt="">
+                  </li>
+              </ul>
+        </div>
+      </section> -->
+
+      <!-- <div class="video-card-container">
+        <div class="video-card">
+            <video src="7931709-hd_1080_1920_24fps.mp4" muted loop autoplay class="card-video"></video>
+            <span class="tag tag-blue hover-button" style="font-size: 18px;">Recipe</span>
+            <a href="/tags/security/"><span class="tag tag-security tag-lg hover-button">#carrot</span></a>
+        </div>
+        <div class="video-card">
+            <video src="3191902-hd_1920_1080_25fps.mp4" muted loop autoplay class="card-video"></video>
+            <span class="tag tag-blue hover-button" style="font-size: 18px;">About</span>
+        </div>
+        <div class="video-card">
+            <video src="4109584-hd_1920_1080_25fps.mp4" muted loop autoplay class="card-video"></video>
+            <span class="tag tag-blue hover-button" style="font-size: 18px;">About</span>
+        </div>
+        <div class="video-card">
+            <video src="6535488-hd_1080_2048_30fps.mp4" muted loop autoplay class="card-video"></video>
+            <span class="tag tag-blue hover-button" style="font-size: 18px;">About</span>
+        </div>
+        <div class="video-card">
+            <video src="7601432-hd_1080_1920_24fps.mp4" muted loop autoplay class="card-video"></video>
+            <span class="tag tag-blue hover-button" style="font-size: 18px;">About</span>
+        </div>
+    </div> -->
+
+
+    <!-- <main role="main">
+          
+              <a href="/tags/security/"><span class="tag tag-security tag-lg">#carrot</span></a>
+          
+              <a href="/tags/firestore/"><span class="tag tag-firestore tag-lg">#potato</span></a>
+          
+              <a href="/tags/auth/"><span class="tag tag-auth tag-lg">#almond</span></a>
+          
+              <a href="/tags/angular/"><span class="tag tag-angular tag-lg">#spinach</span></a>
+          
+              <a href="/tags/react/"><span class="tag tag-react tag-lg">#kiwi</span></a>
+          
+              <a href="/tags/svelte/"><span class="tag tag-svelte tag-lg">#walnut</span></a>
+          
+              <a href="/tags/vue/"><span class="tag tag-vue tag-lg">#avocado</span></a>
+          
+              <a href="/tags/aws/"><span class="tag tag-aws tag-lg">#pumpkin</span></a>
+          
+              <a href="/tags/compsci/"><span class="tag tag-compsci tag-lg">#cashew</span></a>
+          
+              <a href="/tags/gcp/"><span class="tag tag-gcp tag-lg">#cucumber</span></a>
+          
+              <a href="/tags/serverless/"><span class="tag tag-serverless tag-lg">#cherry</span></a>
+          
+              <a href="/tags/node/"><span class="tag tag-node tag-lg">#hazelnut</span></a>
+          
+              <a href="/tags/slack/"><span class="tag tag-slack tag-lg">#tomato</span></a>
+          
+              <a href="/tags/cloud-functions/"><span class="tag tag-cloud-functions tag-lg">#pecan</span></a>
+          
+              <a href="/tags/dart/"><span class="tag tag-dart tag-lg">#coconut</span></a>
+                     
+              <a href="/tags/flutter/"><span class="tag tag-flutter tag-lg">#broccoli</span></a>
+          
+              <a href="/tags/ui/"><span class="tag tag-ui tag-lg">#hazelnut</span></a>
+          
+              <a href="/tags/pro/"><span class="tag tag-pro tag-lg">#strawberry</span></a>
+          
+              <a href="/tags/data-modeling/"><span class="tag tag-data-modeling tag-lg">#carrot</span></a>
+          
+              <a href="/tags/deckgl/"><span class="tag tag-deckgl tag-lg">#plum</span></a>
+          
+              <a href="/tags/google-maps/"><span class="tag tag-google-maps tag-lg">#banana</span></a>
+          
+              <a href="/tags/stripe/"><span class="tag tag-stripe tag-lg">#orange</span></a>
+          
+              <a href="/tags/apollo/"><span class="tag tag-apollo tag-lg">#pea</span></a>
+          
+              <a href="/tags/graphql/"><span class="tag tag-graphql tag-lg">#pineapple</span></a>
+          
+              <a href="/tags/typescript/"><span class="tag tag-typescript tag-lg">#pecan</span></a>
+          
+              <a href="/tags/analytics/"><span class="tag tag-analytics tag-lg">#blueberry</span></a>
+          
+              <a href="/tags/algolia/"><span class="tag tag-algolia tag-lg">#cabbage</span></a>
+          
+              <a href="/tags/mvp/"><span class="tag tag-minimum-viable-product tag-lg">#green-pea</span></a>
+          
+              <a href="/tags/dialogflow/"><span class="tag tag-dialogflow tag-lg">#watermelon</span></a>
+          
+              <a href="/tags/sql/"><span class="tag tag-sql tag-lg">#cherry</span></a>
+          
+              <a href="/tags/android/"><span class="tag tag-android tag-lg">#pistachio</span></a>
+          
+              <a href="/tags/puppeteer/"><span class="tag tag-puppeteer tag-lg">#date</span></a>
+          
+              <a href="/tags/sendgrid/"><span class="tag tag-sendgrid tag-lg">#peach</span></a>
+          
+              <a href="/tags/payments/"><span class="tag tag-payments tag-lg">#garlic</span></a>
+          
+              <a href="/tags/paypal/"><span class="tag tag-paypal tag-lg">#fig</span></a>
+          
+              <a href="/tags/push-notifications/"><span class="tag tag-push-notifications tag-lg">#green-bean</span></a>
+          
+              <a href="/tags/advanced/"><span class="tag tag-advanced tag-lg">#walnut</span></a>
+          
+              <a href="/tags/performance/"><span class="tag tag-performance tag-lg">#blueberry</span></a>
+          
+              <a href="/tags/rxjs/"><span class="tag tag-rxjs tag-lg">#raspberry</span></a>
+          
+              <a href="/tags/pubsub/"><span class="tag tag-pubsub tag-lg">#mango</span></a>
+          
+              <a href="/tags/cloud-run/"><span class="tag tag-cloud-run tag-lg">#kiwi</span></a>
+          
+              <a href="/tags/linux/"><span class="tag tag-linux tag-lg">#cantaloupe</span></a>
+          
+              <a href="/tags/animation/"><span class="tag tag-animation tag-lg">#lime</span></a>
+          
+              <a href="/tags/flare2d/"><span class="tag tag-flare2d tag-lg">#grape</span></a>
+          
+              <a href="/tags/vscode/"><span class="tag tag-vscode tag-lg">#tomato</span></a>
+          
+              <a href="/tags/big-query/"><span class="tag tag-big-query tag-lg">#chili</span></a>
+          
+              <a href="/tags/machine-learning/"><span class="tag tag-machine-learning tag-lg">#apricot</span></a>
+          
+              <a href="/tags/python/"><span class="tag tag-python tag-lg">#cashew</span></a>
+          
+              <a href="/tags/rxdart/"><span class="tag tag-rxdart tag-lg">#cucumber</span></a>
+          
+              <a href="/tags/pwa/"><span class="tag tag-pwa tag-lg">#pear</span></a>
+          
+              <a href="/tags/twa/"><span class="tag tag-twa tag-lg">#peach</span></a>
+          
+              <a href="/tags/devops/"><span class="tag tag-devops tag-lg">#carrot</span></a>
+          
+              <a href="/tags/github/"><span class="tag tag-github tag-lg">#lemon</span></a>
+          
+              <a href="/tags/cloud-storage/"><span class="tag tag-cloud-storage tag-lg">#nutmeg</span></a>
+          
+              <a href="/tags/css/"><span class="tag tag-css tag-lg">#blueberry</span></a>
+          
+              <a href="/tags/realtimedb/"><span class="tag tag-realtimedb tag-lg">#papaya</span></a>
+          
+              <a href="/tags/sass/"><span class="tag tag-sass tag-lg">#almond</span></a>
+          
+              <a href="/tags/git/"><span class="tag tag-git tag-lg">#plum</span></a>
+          
+              <a href="/tags/cloud-build/"><span class="tag tag-cloud-build tag-lg">#kiwi</span></a>
+          
+              <a href="/tags/docker/"><span class="tag tag-docker tag-lg">#date</span></a>
+          
+              <a href="/tags/jest/"><span class="tag tag-jest tag-lg">#celery</span></a>
+          
+              <a href="/tags/testing/"><span class="tag tag-testing tag-lg">#mango</span></a>
+          
+              <a href="/tags/ml/"><span class="tag tag-ml tag-lg">#tangerine</span></a>
+          
+              <a href="/tags/google-calendar/"><span class="tag tag-google-calendar tag-lg">#peach</span></a>
+          
+              <a href="/tags/i18n/"><span class="tag tag-i18n tag-lg">#fig</span></a>
+          
+              <a href="/tags/forms/"><span class="tag tag-forms tag-lg">#apricot</span></a>
+          
+              <a href="/tags/web-components/"><span class="tag tag-web-components tag-lg">#raspberry</span></a>
+          
+              <a href="/tags/tensorflow/"><span class="tag tag-tensorflow tag-lg">#pomegranate</span></a>
+          
+              <a href="/tags/seo/"><span class="tag tag-seo tag-lg">#eggplant</span></a>
+          
+              <a href="/tags/electron/"><span class="tag tag-electron tag-lg">#nutmeg</span></a>
+          
+              <a href="/tags/ngrx/"><span class="tag tag-ngrx tag-lg">#papaya</span></a>
+          
+              <a href="/tags/fcm/"><span class="tag tag-fcm tag-lg">#sweet-potato</span></a>
+          
+              <a href="/tags/mapbox/"><span class="tag tag-mapbox tag-lg">#blackberry</span></a>
+          
+      </main> -->
+      
+
+    <div class="first category1">
+      <div class="second">
+        <img src="lemon-6231697_1920.jpg">
+        <div class="third">
+          <h1>Lemons</h1>
+          <p>Lemons are very rich in vitamin C. In addition, they’re a decent source of potassium and vitamin B6.</p>
+          <div class="one" style="display: flex; flex-wrap: wrap; gap: 5px;">
+          <span class="tag tag-typescript" style="font-size: 20px;">#C</span>
+          <span class="tag tag-blue" style="font-size: 20px;">#B6</span>
+          <span class="tag tag-red" style="font-size: 20px;">#E</span>
+          <span class="tag tag-brown" style="font-size: 20px;">#A</span>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.1/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
